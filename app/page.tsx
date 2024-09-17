@@ -158,8 +158,8 @@ export default function Home() {
               <div className='mr-0 md:mr-20'>
                 <h1 className='text-3xl md:text-4xl font-bold mb-4'>ABOUT US</h1>
                 <p className='text-sm md:text-base'>
-                  "Ecoute" is derived from the French word meaning "to listen." At Ecoute Agency, we
-                  believe in the importance of listening closely to our clients' needs and desires.
+                &quot;Ecoute&quot; is derived from the French word meaning &quot;to listen.&quot; At Ecoute Agency, we
+                  believe in the importance of listening closely to our client&apos;s needs and desires.
                   Our mission is to understand their unique visions and provide the best possible
                   solutions to meet and exceed their expectations.
                 </p>
