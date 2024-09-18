@@ -20,10 +20,10 @@ export default function AboutUs() {
         <div className="absolute inset-0 flex items-center justify-center z-10">
           <div className="text-center max-w-3xl px-4 bg-white bg-opacity-50">
             <h1 className="text-lg font-light leading-relaxed">
-            &quot;Ecoute&quot; is derived from the French word meaning "to listen." At Ecoute Agency, we believe in the importance of listening closely to our clients' needs and desires. Our mission is to understand their unique visions and provide the best possible solutions to meet and exceed their expectations.
+            &quot;Ecoute&quot; is derived from the French word meaning &quot;to listen.&quot; At Ecoute Agency, we believe in the importance of listening closely to our clients needs and desires. Our mission is to understand their unique visions and provide the best possible solutions to meet and exceed their expectations.
             </h1>
             <p className="mt-4">
-              Ecoute Agency operates under PT. Jaya Exsa Perkasa, a legally registered company established in 2020. Our base is in Bandung, where we continuously strive to offer exceptional services to our valued clients.
+              Ecoute Agency operates under PT. Jaya Exsa Perkasa, a legally registered company established in 2020. Our base is in Bandung,∂ where we continuously strive to offer exceptional services to our valued clients.
             </p>
           </div>
         </div>
