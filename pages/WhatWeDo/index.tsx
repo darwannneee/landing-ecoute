@@ -19,7 +19,7 @@ export default function WhatWeDo() {
       <Navbar />
 
       {/* Content div centered horizontally and vertically */}
-      <div className="flex-grow flex justify-center items-center pt-40 md:pt-0 px-4 md:px-8 lg:px-16">
+      <div className="flex-grow flex justify-center items-center pt-10 pb-20 md:pb-0 md:pt-0 px-4 md:px-8 lg:px-16">
         <div className="md:max-w-[1408px] w-full md:h-[676px] border-2 border-[#625598] rounded-[40px] md:rounded-[80px] flex items-center justify-center text-center md:text-right py-10 md:py-0">
           <div className="grid gap-y-10 w-full px-4 md:px-12">
             {/* Brand Digital */}
