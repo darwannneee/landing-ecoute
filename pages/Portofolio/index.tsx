@@ -154,7 +154,7 @@ export default function Portfolio() {
                                     <Image src={image.src} width={800} height={800} alt={image.alt} className="w-full h-auto" />
                                     {hoveredBranding === index && (
                                         <div className="absolute inset-0 flex items-center justify-center">
-                                            <div className="bg-white bg-opacity-85 md:w-[330px] md:h-[340px] 2xl:w-[500px] 2xl:h-[520px] text-center items-center justify-center flex flex-col gap-y-2">
+                                            <div className="bg-white bg-opacity-85 w-[300px] h-[300px] md:w-[330px] md:h-[340px] 2xl:w-[500px] 2xl:h-[520px] text-center items-center justify-center flex flex-col gap-y-2">
                                                 <p className={`${MonstserratFontBold.className} text-slate-600 text-lg`}>2024</p>
                                                 <p className={`text-black font-bold ${MonstserratFontBold.className} text-3xl`}>{image.text}</p>
                                             </div>
@@ -188,7 +188,7 @@ export default function Portfolio() {
                                     <Image src={image.src} width={800} height={800} alt={image.alt} className="w-full h-auto" />
                                     {hoveredDocumentation === index && (
                                         <div className="absolute inset-0 flex items-center justify-center">
-                                            <div className="bg-white bg-opacity-85 md:w-[330px] md:h-[340px] 2xl:w-[500px] 2xl:h-[520px] text-center items-center justify-center flex flex-col gap-y-2">
+                                            <div className="bg-white bg-opacity-85 w-[300px] h-[300px] md:w-[330px] md:h-[340px] 2xl:w-[500px] 2xl:h-[520px] text-center items-center justify-center flex flex-col gap-y-2">
                                                 <p className={`${MonstserratFontBold.className} text-slate-600 text-lg`}>2024</p>
                                                 <p className={`text-black font-bold ${MonstserratFontBold.className} text-3xl`}>{image.text}</p>
                                             </div>
@@ -222,7 +222,7 @@ export default function Portfolio() {
                                     <Image src={image.src} width={800} height={800} alt={image.alt} className="w-full h-auto" />
                                     {hoveredMusicVideo === index && (
                                         <div className="absolute inset-0 flex items-center justify-center">
-                                            <div className="bg-white bg-opacity-85 md:w-[330px] md:h-[340px] 2xl:w-[500px] 2xl:h-[520px] text-center items-center justify-center flex flex-col gap-y-2">
+                                            <div className="bg-white bg-opacity-85 w-[300px] h-[300px] md:w-[330px] md:h-[340px] 2xl:w-[500px] 2xl:h-[520px] text-center items-center justify-center flex flex-col gap-y-2">
                                                 <p className={`${MonstserratFontBold.className} text-slate-600 text-lg`}>2024</p>
                                                 <p className={`text-black font-bold ${MonstserratFontBold.className} text-3xl`}>{image.text}</p>
                                             </div>
@@ -256,7 +256,7 @@ export default function Portfolio() {
                                     <Image src={image.src} width={800} height={800} alt={image.alt} className="w-full h-auto" />
                                     {hoveredProduct === index && (
                                         <div className="absolute inset-0 flex items-center justify-center">
-                                            <div className="bg-white bg-opacity-85 md:w-[330px] md:h-[340px] 2xl:w-[500px] 2xl:h-[520px] text-center items-center justify-center flex flex-col gap-y-2">
+                                            <div className="bg-white bg-opacity-85 w-[300px] h-[300px] md:w-[330px] md:h-[340px] 2xl:w-[500px] 2xl:h-[520px] text-center items-center justify-center flex flex-col gap-y-2">
                                                 <p className={`${MonstserratFontBold.className} text-slate-600 text-lg`}>2024</p>
                                                 <p className={`text-black font-bold ${MonstserratFontBold.className} text-3xl`}>{image.text}</p>
                                             </div>
@@ -290,7 +290,7 @@ export default function Portfolio() {
                                 <Image src={image.src} width={800} height={800} alt={image.alt} className="w-full h-auto" />
                                 {hoveredProperties === index && (
                                     <div className="absolute inset-0 flex items-center justify-center">
-                                        <div className="bg-white bg-opacity-85 md:w-[330px] md:h-[340px] 2xl:w-[500px] 2xl:h-[520px] text-center items-center justify-center flex flex-col gap-y-2">
+                                        <div className="bg-white bg-opacity-85 w-[300px] h-[300px] md:w-[330px] md:h-[340px] 2xl:w-[500px] 2xl:h-[520px] text-center items-center justify-center flex flex-col gap-y-2">
                                             <p className={`${MonstserratFontBold.className} text-slate-600 text-lg`}>2024</p>
                                             <p className={`text-black font-bold ${MonstserratFontBold.className} text-3xl`}>{image.text}</p>
                                         </div>
