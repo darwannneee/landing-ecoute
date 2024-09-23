@@ -132,6 +132,100 @@ export default function Portfolio() {
             <Navbar />
             <div className={`flex-grow flex flex-col items-center p-4 pt-16 md:pt-52 2xl:pt-80 pb-24 md:pb-8 m-0 ${MonstserratFontBoldItalic.className}`}>
                 <div className="w-full sm:w-[90%] md:w-[80%] space-y-2">
+                    {/* Event Organizer */}
+                    {/* Event Planning & Strategy */}
+                    <div className="flex items-center justify-between w-full border-b-2 border-[#625598]">
+                        <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-7xl text-[#625598] font-bold leading-none">Event Planning & Strategy</h1>
+                        <svg className="w-8 h-8 md:w-12 md:h-12" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 34L34 14M34 14H14M34 14V34" stroke="#625598" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    {/* Venue Selection and Management */}
+                    <div className="flex items-center justify-between w-full border-b-2 border-[#625598]">
+                        <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-7xl text-[#625598] font-bold leading-none">Venue Selection and Management</h1>
+                        <svg className="w-8 h-8 md:w-12 md:h-12" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 34L34 14M34 14H14M34 14V34" stroke="#625598" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    {/* Vendor Coordination */}
+                    <div className="flex items-center justify-between w-full border-b-2 border-[#625598]">
+                        <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-7xl text-[#625598] font-bold leading-none">Vendor Coordination</h1>
+                        <svg className="w-8 h-8 md:w-12 md:h-12" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 34L34 14M34 14H14M34 14V34" stroke="#625598" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    {/* Registration And Attendee Management*/}
+                    <div className="flex items-center justify-between w-full border-b-2 border-[#625598]">
+                        <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-7xl text-[#625598] font-bold leading-none">Registration And Attendee Management</h1>
+                        <svg className="w-8 h-8 md:w-12 md:h-12" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 34L34 14M34 14H14M34 14V34" stroke="#625598" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    {/* Logistics and Operations Management */}
+                    <div className="flex items-center justify-between w-full border-b-2 border-[#625598]">
+                        <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-7xl text-[#625598] font-bold leading-none">Logistics and Operations Management</h1>
+                        <svg className="w-8 h-8 md:w-12 md:h-12" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 34L34 14M34 14H14M34 14V34" stroke="#625598" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    {/* Entertainment and Programming */}
+                    <div className="flex items-center justify-between w-full border-b-2 border-[#625598]">
+                        <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-7xl text-[#625598] font-bold leading-none">Entertainment and Programming</h1>
+                        <svg className="w-8 h-8 md:w-12 md:h-12" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 34L34 14M34 14H14M34 14V34" stroke="#625598" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    {/* Audio-Visual and Tehcnical Support */}
+                    <div className="flex items-center justify-between w-full border-b-2 border-[#625598]">
+                        <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-7xl text-[#625598] font-bold leading-none">Audio-Visual and Tehcnical Support</h1>
+                        <svg className="w-8 h-8 md:w-12 md:h-12" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 34L34 14M34 14H14M34 14V34" stroke="#625598" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    {/* Design and Decor */}
+                    <div className="flex items-center justify-between w-full border-b-2 border-[#625598]">
+                        <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-7xl text-[#625598] font-bold leading-none">Design and Decor</h1>
+                        <svg className="w-8 h-8 md:w-12 md:h-12" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 34L34 14M34 14H14M34 14V34" stroke="#625598" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+
+                    {/* Digital */}
+                    {/* Web Design and Development */}
+                    <div className="flex items-center justify-between w-full border-b-2 border-[#625598]">
+                        <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-7xl text-[#625598] font-bold leading-none">Web Design and Development</h1>
+                        <svg className="w-8 h-8 md:w-12 md:h-12" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 34L34 14M34 14H14M34 14V34" stroke="#625598" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    {/* Analytics and Reporting */}
+                    <div className="flex items-center justify-between w-full border-b-2 border-[#625598]">
+                        <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-7xl text-[#625598] font-bold leading-none">Web Design and Development</h1>
+                        <svg className="w-8 h-8 md:w-12 md:h-12" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 34L34 14M34 14H14M34 14V34" stroke="#625598" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    {/* Photo and Video Marketing */}
+                    <div className="flex items-center justify-between w-full border-b-2 border-[#625598]">
+                        <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-7xl text-[#625598] font-bold leading-none">Web Design and Development</h1>
+                        <svg className="w-8 h-8 md:w-12 md:h-12" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 34L34 14M34 14H14M34 14V34" stroke="#625598" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    {/* Display And */}
+                    <div className="flex items-center justify-between w-full border-b-2 border-[#625598]">
+                        <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-7xl text-[#625598] font-bold leading-none">Web Design and Development</h1>
+                        <svg className="w-8 h-8 md:w-12 md:h-12" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 34L34 14M34 14H14M34 14V34" stroke="#625598" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    {/* Display And */}
+                    <div className="flex items-center justify-between w-full border-b-2 border-[#625598]">
+                        <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-7xl text-[#625598] font-bold leading-none">Model Agency</h1>
+                        <svg className="w-8 h-8 md:w-12 md:h-12" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 34L34 14M34 14H14M34 14V34" stroke="#625598" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
                     {/* Branding */}
                     <div className="w-full">
                         <div className="flex items-center justify-between w-full border-b-2 border-[#625598]">
