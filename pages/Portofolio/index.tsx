@@ -219,13 +219,6 @@ export default function Portfolio() {
                             <path d="M14 34L34 14M34 14H14M34 14V34" stroke="#625598" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    {/* Display And */}
-                    <div className="flex items-center justify-between w-full border-b-2 border-[#625598]">
-                        <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-7xl text-[#625598] font-bold leading-none">Model Agency</h1>
-                        <svg className="w-8 h-8 md:w-12 md:h-12" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M14 34L34 14M34 14H14M34 14V34" stroke="#625598" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
                     {/* Branding */}
                     <div className="w-full">
                         <div className="flex items-center justify-between w-full border-b-2 border-[#625598]">
