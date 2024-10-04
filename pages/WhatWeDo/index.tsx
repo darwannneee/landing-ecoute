@@ -27,13 +27,13 @@ export default function WhatWeDo() {
               {/* Button for Brand Digital (will appear on top on mobile) */}
               <div className="flex justify-center items-center md:order-2 order-1 mb-4 md:mb-0">
                 <div className="w-full max-w-[300px] md:max-w-[596px] md:h-[146px] h-[80px] flex items-center justify-center bg-[#625598] text-white rounded-full">
-                  <h1 className={`${MonsterratFontBold.className} font-bold text-xl`}>BRAND DIGITAL</h1>
+                  <h1 className={`${MonsterratFontBold.className} font-bold text-xl`}>KAMPANYE DIGITAL</h1>
                 </div>
               </div>
               {/* About Brand Digital (will appear below on mobile) */}
               <div className="flex items-center h-full order-2 md:order-1">
                 <p className={`text-black text-xs md:text-sm ${MonsterratFont.className} `}>
-                  Brand Digital adalah divisi yang bertanggung jawab untuk mengelola dan memperkuat kehadiran merek di ruang digital, melalui strategi yang terukur, inovatif, dan berfokus pada kebutuhan konsumen. Divisi ini memastikan bahwa setiap aspek dari identitas merek tercermin dengan konsisten di berbagai platform digital, baik itu melalui media sosial, website, maupun kampanye digital lainnya.
+                  Kami merancang strategi pemasaran digital yang disesuaikan, termasuk pembuatan konten, SEO, dan iklan berbayar untuk meningkatkan visibilitas dan interaksi merek.
                 </p>
               </div>
             </div>
@@ -43,13 +43,13 @@ export default function WhatWeDo() {
               {/* Button for Digital Agency (will appear on top on mobile) */}
               <div className="flex justify-center items-center md:order-2 order-1 mb-4 md:mb-0">
                 <div className="w-full max-w-[300px] md:max-w-[596px] md:h-[146px] h-[80px] flex items-center justify-center bg-[#625598] text-white rounded-full">
-                  <h1 className={`${MonsterratFontBold.className} font-bold text-xl`}>DIGITAL AGENCY</h1>
+                  <h1 className={`${MonsterratFontBold.className} font-bold text-xl`}>DESAIN KREATIF</h1>
                 </div>
               </div>
               {/* About Digital Agency (will appear below on mobile) */}
               <div className="flex items-center h-full order-2 md:order-1">
                 <p className={`text-black text-xs md:text-sm ${MonsterratFont.className} `}>
-                  Brand Digital adalah divisi yang bertanggung jawab untuk mengelola dan memperkuat kehadiran merek di ruang digital, melalui strategi yang terukur, inovatif, dan berfokus pada kebutuhan konsumen. Divisi ini memastikan bahwa setiap aspek dari identitas merek tercermin dengan konsisten di berbagai platform digital, baik itu melalui media sosial, website, maupun kampanye digital lainnya.
+                  Tim desain kami menghasilkan visual yang menarik yang sesuai dengan identitas merek Anda, memastikan pesan yang kohesif dan berkesan di semua platform.
                 </p>
               </div>
             </div>
@@ -59,13 +59,13 @@ export default function WhatWeDo() {
               {/* Button for Model Agency (will appear on top on mobile) */}
               <div className="flex justify-center items-center md:order-2 order-1 mb-4 md:mb-0">
                 <div className="w-full max-w-[300px] md:max-w-[596px] md:h-[146px] h-[80px] flex items-center justify-center bg-[#625598] text-white rounded-full">
-                  <h1 className={`${MonsterratFontBold.className} font-bold text-xl`}>MODEL AGENCY</h1>
+                  <h1 className={`${MonsterratFontBold.className} font-bold text-xl`}>BRANDING</h1>
                 </div>
               </div>
               {/* About Model Agency (will appear below on mobile) */}
               <div className="flex items-center h-full order-2 md:order-1">
                 <p className={`text-black text-xs md:text-sm ${MonsterratFont.className} `}>
-                  Brand Digital adalah divisi yang bertanggung jawab untuk mengelola dan memperkuat kehadiran merek di ruang digital, melalui strategi yang terukur, inovatif, dan berfokus pada kebutuhan konsumen. Divisi ini memastikan bahwa setiap aspek dari identitas merek tercermin dengan konsisten di berbagai platform digital, baik itu melalui media sosial, website, maupun kampanye digital lainnya.
+                  Kami membantu membangun merek yang kuat dan mudah dikenali melalui perencanaan strategis, pembuatan logo, serta pemetaan posisi merek di pasar.
                 </p>
               </div>
             </div>
