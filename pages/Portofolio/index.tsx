@@ -44,10 +44,6 @@ export default function Portfolio() {
         setDigital(!showDigital)
     }
 
-    const toggleOfflineAdversiting = () => {
-        setOfflineAdversiting(!showOfflineAdversiting)
-    }
-
     const toggleBranding = () => {
         setShowBranding(!showBranding)
     }
@@ -77,8 +73,7 @@ export default function Portfolio() {
     const [hoveredMusicVideo, sethoveredMusicVideo] = useState<number | null>(null);
     const [hoveredProduct, sethoveredProduct] = useState<number | null>(null);
     const [hoveredProperties, setHoveredProperties] = useState<number | null>(null);
-    const [hoveredWebsite, setHoveredWebsite] = useState<number | null>(null);
-
+    
     return (
         <main className="bg-white flex flex-col p-0 m-0">
             <Navbar />
