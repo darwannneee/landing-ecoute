@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 import Navbar from "@/components/Navbar";
 import { OBJLoader } from 'three-stdlib';
@@ -11,9 +11,20 @@ const MonsterratFont = Montserrat({
   subsets: ['latin']
 })
 
+// Loading screen component
+const LoadingScreen = () => (
+  <div className="fixed inset-0 flex items-center justify-center bg-white z-50">
+    <div className="text-center">
+      <div className="w-16 h-16 border-t-4 border-blue-500 border-solid rounded-full animate-spin mb-4"></div>
+      <p className="text-xl font-semibold text-gray-700">Loading...</p>
+    </div>
+  </div>
+);
+
 export default function Home() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const objectRef = useRef<THREE.Object3D | null>(null); // Reference for the 3D object
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     // Scene setup
@@ -127,6 +138,7 @@ export default function Home() {
       // Adjust object position to the left
       object.position.x = -0.1; // Move the object to the left (adjust value as needed)
       scene.add(object);
+      setIsLoading(false); // Set loading to false when the object is loaded
     });
 
     // Adjust camera position based on screen size
@@ -183,7 +195,7 @@ export default function Home() {
   return (
     <main className={`${MonsterratFont.className} relative text-white min-h-screen bg-white`}>
       <Navbar />
-
+      {isLoading && <LoadingScreen />}
       {/* Adjusted content container */}
       <div className="flex items-center justify-center min-h-[calc(100vh-80px)] md:min-h-[calc(100vh-80px)] pb-20 md:pb-0"> 
         {/* Added pb-20 for mobile to create space at the bottom, md:pb-0 to remove it on larger screens */}
