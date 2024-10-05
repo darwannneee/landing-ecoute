@@ -27,8 +27,6 @@ export default function Portfolio() {
     // 
     const [showEventOrganizer, setEventOrganizer] = useState(false);
     const [showDigital, setDigital] = useState(false);
-    const [showOfflineAdversiting, setOfflineAdversiting] = useState(false);
-
     const [showDocumentation, setShowDocumentation] = useState(false);
     const [showBranding, setShowBranding] = useState(false);
     const [showMusicVideo, setMusicVideo] = useState(false);
@@ -73,7 +71,7 @@ export default function Portfolio() {
     const [hoveredMusicVideo, sethoveredMusicVideo] = useState<number | null>(null);
     const [hoveredProduct, sethoveredProduct] = useState<number | null>(null);
     const [hoveredProperties, setHoveredProperties] = useState<number | null>(null);
-    
+
     return (
         <main className="bg-white flex flex-col p-0 m-0">
             <Navbar />
