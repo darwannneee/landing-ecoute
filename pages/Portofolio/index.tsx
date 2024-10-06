@@ -213,15 +213,18 @@ export default function Portfolio() {
                                             onMouseLeave={() => setHoveredBranding(null)}
                                             onClick={() => setHoveredBranding(hoveredDocumentation === index ? null : index)}
                                             >
-                                            <Image src={image.src} width={800} height={800} alt={image.alt} className="w-full h-auto" />
-                                            {hoveredBranding === index && (
-                                                <div className="absolute inset-0 flex items-center justify-center">
-                                                    <div className="bg-white bg-opacity-85 w-[300px] h-[300px] md:w-[330px] md:h-[340px] 2xl:w-[500px] 2xl:h-[520px] text-center items-center justify-center flex flex-col gap-y-2">
-                                                        <p className={`${MonstserratFontBold.className} text-slate-600 text-lg`}>2024</p>
-                                                        <p className={`text-black font-bold ${MonstserratFontBold.className} text-3xl`}>{image.text}</p>
+                                            <a href={`/Portofolio/branding/${image.href}`}>
+                                                <Image src={image.src} width={800} height={800} alt={image.alt} className="w-full h-auto" />
+                                                {hoveredBranding === index && (
+                                                    <div className="absolute inset-0 flex items-center justify-center">
+                                                        <div className="bg-white bg-opacity-85 w-[300px] h-[300px] md:w-[330px] md:h-[340px] 2xl:w-[500px] 2xl:h-[520px] text-center items-center justify-center flex flex-col gap-y-2">
+                                                            <p className={`${MonstserratFontBold.className} text-slate-600 text-lg`}>2024</p>
+                                                            <p className={`text-black font-bold ${MonstserratFontBold.className} text-3xl`}>{image.text}</p>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            )}
+                                                )}
+                                            </a>
+                                            
                                             </div>
                                         ))}
                                         </div>
@@ -296,10 +299,11 @@ export default function Portfolio() {
                                 </div>
                                 )}
                             </div>
-                            {/* Product */}
                             <div className="w-full">
                                 <div className="flex items-center justify-between w-full border-b-2 border-[#625598]">
-                                    <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-7xl text-[#625598] font-bold leading-none" onClick={toggleProduct}>Product</h1>
+                                    <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-7xl text-[#625598] font-bold leading-none" onClick={toggleProduct}>
+                                        Product
+                                    </h1>
                                     <svg className="w-8 h-8 md:w-12 md:h-12" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M14 34L34 14M34 14H14M34 14V34" stroke="#625598" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
@@ -307,27 +311,35 @@ export default function Portfolio() {
                                 {showProduct && (
                                     <div className="py-4">
                                         <div className="grid grid-cols-1 md:grid-cols-3">
-                                        {imagesProduct.map((image, index) => (
-                                            <div 
-                                            key={index}
-                                            className="relative cursor-pointer"
-                                            onMouseEnter={() => sethoveredProduct(index)}
-                                            onMouseLeave={() => sethoveredProduct(null)}
-                                            onClick={() => sethoveredProduct(hoveredProduct === index ? null : index)}
-                                            >
-                                            <Image src={image.src} width={800} height={800} alt={image.alt} className="w-full h-auto" />
-                                            {hoveredProduct === index && (
-                                                <div className="absolute inset-0 flex items-center justify-center">
-                                                    <div className="bg-white bg-opacity-85 w-[300px] h-[300px] md:w-[330px] md:h-[340px] 2xl:w-[500px] 2xl:h-[520px] text-center items-center justify-center flex flex-col gap-y-2">
-                                                        <p className={`${MonstserratFontBold.className} text-slate-600 text-lg`}>2024</p>
-                                                        <p className={`text-black font-bold ${MonstserratFontBold.className} text-3xl`}>{image.text}</p>
-                                                    </div>
+                                            {imagesProduct.map((image, index) => (
+                                                <div 
+                                                    key={index}
+                                                    className="relative cursor-pointer"
+                                                    onMouseEnter={() => sethoveredProduct(index)}
+                                                    onMouseLeave={() => sethoveredProduct(null)}
+                                                    onClick={() => sethoveredProduct(hoveredProduct === index ? null : index)}
+                                                >
+                                                    {image.format === "photo" ? (
+                                                        <Image src={image.src} width={800} height={800} alt={image.alt} className="w-full h-auto" />
+                                                    ) : (
+                                                        <video width="800" height="800" controls className="w-full h-auto">
+                                                            <source src={image.src} type="video/mp4" />
+                                                            Your browser does not support the video tag.
+                                                        </video>
+                                                    )}
+
+                                                    {hoveredProduct === index && (
+                                                        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                                                            <div className="bg-white bg-opacity-85 w-[300px] h-[300px] md:w-[330px] md:h-[340px] 2xl:w-[500px] 2xl:h-[520px] text-center items-center justify-center flex flex-col gap-y-2">
+                                                                <p className={`${MonstserratFontBold.className} text-slate-600 text-lg`}>{image.year}</p>
+                                                                <p className={`text-black font-bold ${MonstserratFontBold.className} text-3xl`}>{image.text}</p>
+                                                            </div>
+                                                        </div>
+                                                    )}
                                                 </div>
-                                            )}
-                                            </div>
-                                        ))}
+                                            ))}
                                         </div>
-                                </div>
+                                    </div>
                                 )}
                             </div>
                             {/* Properties */}

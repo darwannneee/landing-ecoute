@@ -2,8 +2,8 @@ const Sostenuto = "https://rfvazcvvtrgdknkonewo.supabase.co/storage/v1/object/pu
 const GreatAsia = "https://rfvazcvvtrgdknkonewo.supabase.co/storage/v1/object/public/ecoute/branding/GREATASIA.jpg"
 
 const imagesBranding = [
-    { src: Sostenuto, alt: "SOSTENUTO OFFICIAL | BRAND IDENTITY", text: "SOSTENUTO OFFICIAL | BRAND IDENTITY", year: "2024" },
-    { src: GreatAsia, alt: "THE GREAT ASIA AFRICA | BRAND IDENTITY", text: "THE GREAT ASIA AFRICA | BRAND IDENTITY", year: "2024" },
+    { src: Sostenuto, alt: "SOSTENUTO OFFICIAL | BRAND IDENTITY", text: "SOSTENUTO OFFICIAL | BRAND IDENTITY", year: "2024", href: "sostenuto" },
+    { src: GreatAsia, alt: "THE GREAT ASIA AFRICA | BRAND IDENTITY", text: "THE GREAT ASIA AFRICA | BRAND IDENTITY", year: "2024", href: "greatasia" },
 ]
 
 export default imagesBranding;
