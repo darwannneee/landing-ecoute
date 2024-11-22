@@ -11,6 +11,7 @@ import imagesMusicVideo from "@/utils/imagesPortofolio/imagesMusicVideo"
 import imagesProduct from "@/utils/imagesPortofolio/imagesProduct"
 import imagesProperties from "@/utils/imagesPortofolio/imagesProperties"
 import imagesWebsite from "@/utils/imagesPortofolio/imagesWebsite";
+import imagesContruction from "@/utils/imagesPortofolio/imagesContruction";
 
 // Import Font
 const MonstserratFontBoldItalic = Montserrat({
@@ -33,6 +34,8 @@ export default function Portfolio() {
     const [showProduct, setProduct] = useState(false);
     const [showProperties, setProperties] = useState(false);
     const [showWebsite, setWebsite] = useState(false);
+    const [showConstruction, setConstruction] = useState(false);
+    const [showCollateral, setCollateral] = useState(false);
     
     const toggleEventOrganizer = () => {
         setEventOrganizer(!showEventOrganizer)
@@ -66,11 +69,20 @@ export default function Portfolio() {
         setWebsite(!showWebsite)
     }
 
+    const toggleConstruction = () => {
+        setConstruction(!showConstruction)
+    }
+
+    const toggleCollateral = () => {
+        setCollateral(!showCollateral)
+    }
+
     const [hoveredBranding, setHoveredBranding] = useState<number | null>(null);
     const [hoveredDocumentation, setHoveredDocumentation] = useState<number | null>(null);
     const [hoveredMusicVideo, sethoveredMusicVideo] = useState<number | null>(null);
     const [hoveredProduct, sethoveredProduct] = useState<number | null>(null);
     const [hoveredProperties, setHoveredProperties] = useState<number | null>(null);
+    const [hoveredCollateral, setHoveredCollateral] = useState<number | null>(null);
 
     return (
         <main className="bg-white flex flex-col p-0 m-0">
@@ -392,13 +404,54 @@ export default function Portfolio() {
                             <path d="M14 34L34 14M34 14H14M34 14V34" stroke="#625598" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    {/* Collateral Production */}
-                    <div className="flex items-center justify-between w-full border-b-2 border-[#625598]" onClick={toggleDigital}>
+                    {/* COLLATERAL PRODUCTION */}
+                    <div className="flex items-center justify-between w-full border-b-2 border-[#625598]" onClick={toggleCollateral}>
                         <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-7xl text-[#625598] font-bold leading-none">COLLATERAL PRODUCTION</h1>
                         <svg className="w-8 h-8 md:w-12 md:h-12" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M14 34L34 14M34 14H14M34 14V34" stroke="#625598" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
+                    {showCollateral && (
+                        <div className="ml-10"> 
+                            {/* Construction and Design Interior */}
+                            <div className="w-full">
+                                <div className="flex items-center justify-between w-full border-b-2 border-[#625598]">
+                                    <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-7xl text-[#625598] font-bold leading-none" onClick={toggleConstruction}>Construction and Design Interior</h1>
+                                    <svg className="w-8 h-8 md:w-12 md:h-12" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14 34L34 14M34 14H14M34 14V34" stroke="#625598" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                {showConstruction && (
+                                    <div className="py-4">
+                                    <div className="grid grid-cols-1 md:grid-cols-3">
+                                    {imagesContruction.map((image, index) => (
+                                        <div 
+                                        key={index}
+                                        className="relative cursor-pointer"
+                                        onMouseEnter={() => setHoveredCollateral(index)}
+                                        onMouseLeave={() => setHoveredCollateral(null)}
+                                        onClick={() => setHoveredCollateral(hoveredCollateral === index ? null : index)}
+                                        >
+                                        <Image src={image.src} width={800} height={800} alt={image.alt} className="w-full h-auto" />
+                                        {hoveredCollateral === index && (
+                                            <div className="absolute inset-0 flex items-center justify-center">
+                                                <a href={`${image.href}`}>
+                                                    <div className="bg-white bg-opacity-85 w-full h-full text-center items-center justify-center flex flex-col gap-y-2">
+                                                        <p className={`${MonstserratFontBold.className} text-slate-600 text-lg`}>2024</p>
+                                                        <p className={`text-black font-bold ${MonstserratFontBold.className} text-3xl`}>{image.text}</p>
+                                                    </div>
+                                                </a>
+                                                
+                                            </div>
+                                        )}
+                                        </div>
+                                    ))}
+                                    </div>
+                                </div>
+                                )}
+                            </div>
+                        </div>
+                    )}
                 </div>
             </div>
         </main>
